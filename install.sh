@@ -74,7 +74,6 @@ confPacman "/mnt/etc/pacman.conf"
 
 # Gen-fstab / Change mask
 genfstab -U /mnt >> /mnt/etc/fstab
-sed -i 's/fmask\=0022,dmask\=0022/fmask\=0137,dmask\=0027/' /mnt/etc/fstab
 
 # arch-chroot
 arch-chroot /mnt << _EOF_
